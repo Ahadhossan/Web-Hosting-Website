@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .nav-link{
+        @apply relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-yellow-300 text-white after:w-full  font-medium after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-right
+    }
+    .swiper_slide{
+        @apply flex items-center rounded-2xl font-bold text-2xl text-white p-4
+    }
+
+    .footer-title{
+        @apply text-lg text-black font-semibold mb-6
+    }
+
+    .footer-link{
+        @apply text-black opacity-80 font-medium mb-4 text-base cursor-pointer hover:text-blue-600
+    }
+}
